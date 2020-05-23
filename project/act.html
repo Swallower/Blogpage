@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="icon" href="img/gexing.png">
+    <link rel="stylesheet" href="css/act.css">
+    <script src="js/jquery-1.11.3.js"></script>
+</head>
+<body>
+    <div id="all">
+        <div id=head>
+            <table></table>
+            <div id="head_1">
+                <table></table>
+                    <ul id="ul1" class="ulh">
+                            <li>标题一</li>
+                            <li>标题二</li>
+                            <li>标题三</li>
+                    </ul>
+                        <div class="clear"></div>
+                        <ul class="ul2">
+                            <li style=""><a href="#"><img src="img/weixin-copy.png" alt=""></a></li>
+                            <li ><a href="#"><img src="img/qq-copy.png" alt=""></a></li>
+                            <li><a href="#"><img src="img/weibo-copy.png" alt=""></a></li>
+                            <li><a href="#"><img src="img/lianshu-copy.png" alt=""></a></li>
+                        </ul>
+                        <div class="clear"></div>
+            </div>
+            <div class="head_2 ">
+                <div id="logo2_father">
+                    <img src="img/logo2.png" alt="" id="logo2">
+                </div>
+                <div id="ab_">
+                    <ul id="caidan" >
+                        <li>home</li>
+                        <li>archive</li>
+                        <li>single</li>
+                        <li>contact</li>
+                        <li ><img src="img/caidan.png" alt="" id="cdlogo" ></li>
+                    </ul>
+                </div>
+            </div>
+            <script>
+                var head=document.getElementsByClassName("head_2");
+                
+                // var hei=$(document).scrollTop();
+                $(document).scroll(function(){//页面加载时，获取滚动条初始高度
+                　　var distance = $(document).scrollTop();  //获取滚动条初始高度的值 ：0
+                　　 console.log(distance); //打印滚动条不同高度的位置的值
+
+                　　if(distance <= 400) {  //当滚动条高度为0时
+                　　　　$(head).removeClass("head_2b");  //移除某某css   
+                　　}else {
+                        // $(head).slideToggle();
+                　　　　$(head).addClass('head_2b');   //添加某某css
+
+                    }
+                })
+            </script>
+            <div class="clear"></div>
+            <div id="head_3">
+                <div id="life">  
+                    <h1 id="font_h1">Life Record</h1>
+                </div>
+            </div>
+        </div>
+        <div id="body">
+            <div id=bodyy>
+                <div id="body_head">
+                    <table></table>
+                    <h3 style="margin:20px;">Showing post for "Travel"</h3>
+                </div> 
+                <div class="body_l">
+                    <div class="body_list">
+                            <div class="body_imgg">
+                                <img src="img/img06.jpg" alt=""class="body_mb22">
+                            </div>
+                                <button>25TH MAY-TRAVEL</button>
+                                <h2 class="body_cpbt">I get up in the morning looking for adventure.</h1>
+                                <p class="body_cpnr">
+                                    Lorem ipsum dolor Hic excepturi nihil duci necessitatibus ratione, consequatur nostrum alias!
+                                </p>
+                                <a href=""class="body_arm">READ MORE</a>
+                                <div class="body_lbf">
+                                    <div class="body_lb body_lb1">
+                                        <img src="img/liaotian.png" alt=""class="body_sp body_left">
+                                        <a href="#"class="body_left">25comments</a>
+                                    </div>
+                                    <div class="body_lb body_lb2">
+                                         
+                                                <img src="img/分享.png" alt=""class="body_sp1 body_left">
+                                            
+                                            <a href="#" class="body_left">138shares</a>    
+                                    </div>
+                                </div>
+                    </div>
+                    <div class="body_list">
+                        <div class="body_imgg">
+                            <img src="img/img23.jpg" alt=""class="body_mb22">
+                        </div>
+                            <button>25TH MAY-TRAVEL</button>
+                            <h2 class="body_cpbt">I get up in the morning looking for adventure.</h1>
+                            <p class="body_cpnr">
+                                Lorem ipsum dolor Hic excepturi nihil duci necessitatibus ratione, consequatur nostrum alias!
+                            </p>
+                            <a href=""class="body_arm">READ MORE</a>
+                            <div class="body_lbf">
+                                <div class="body_lb body_lb1">
+                                    <img src="img/liaotian.png" alt=""class="body_sp body_left">
+                                    <a href="#"class="body_left">25comments</a>
+                                </div>
+                                <div class="body_lb body_lb2">
+                                     
+                                            <img src="img/分享.png" alt=""class="body_sp1 body_left">
+                                        
+                                        <a href="#" class="body_left">138shares</a>    
+                                </div>
+                            </div>
+                    </div>
+                    <div class="body_list">
+                            <div class="body_imgg">
+                                <img src="img/img70.jpg" alt=""class="body_mb22">
+                            </div>    
+                            <button>25TH MAY-TRAVEL</button>
+                            <h2 class="body_cpbt">I get up in the morning looking for adventure.</h1>
+                            <p class="body_cpnr">
+                                Lorem ipsum dolor Hic excepturi nihil duci necessitatibus ratione, consequatur nostrum alias!
+                            </p>
+                            <a href=""class="body_arm">READ MORE</a>
+                            <div class="body_lbf">
+                                <div class="body_lb body_lb1">
+                                    <img src="img/liaotian.png" alt=""class="body_sp body_left">
+                                    <a href="#"class="body_left">25comments</a>
+                                </div>
+                                <div class="body_lb body_lb2">
+                                     
+                                            <img src="img/分享.png" alt=""class="body_sp1 body_left">
+                                        
+                                        <a href="#" class="body_left">138shares</a>    
+                                </div>
+                            </div>
+                    </div>                   
+                    <div class="body_list">
+                        <div class="body_imgg">
+                            <img src="img/img65.jpg" alt=""class="body_mb22">
+                        </div>
+                        <button>25TH MAY-TRAVEL</button>
+                        <h2 class="body_cpbt">I get up in the morning looking for adventure.</h1>
+                        <p class="body_cpnr">
+                            Lorem ipsum dolor Hic excepturi nihil duci necessitatibus ratione, consequatur nostrum alias!
+                        </p>
+                        <a href=""class="body_arm">READ MORE</a>
+                        <div class="body_lbf">
+                            <div class="body_lb body_lb1">
+                                <img src="img/liaotian.png" alt=""class="body_sp body_left">
+                                <a href="#"class="body_left">25comments</a>
+                            </div>
+                            <div class="body_lb body_lb2">
+                                        <img src="img/分享.png" alt=""class="body_sp1 body_left">
+                                    <a href="#" class="body_left">138shares</a>    
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="body_list">
+                        <div class="body_imgg">
+                            <img src="img/img66.jpg" alt=""class="body_mb22">
+                        </div>
+                        <button>25TH MAY-TRAVEL</button>
+                        <h2 class="body_cpbt">I get up in the morning looking for adventure.</h1>
+                        <p class="body_cpnr">
+                            Lorem ipsum dolor Hic excepturi nihil duci necessitatibus ratione, consequatur nostrum alias!
+                        </p>
+                        <a href=""class="body_arm">READ MORE</a>
+                        <div class="body_lbf">
+                            <div class="body_lb body_lb1">
+                                <img src="img/liaotian.png" alt=""class="body_sp body_left">
+                                <a href="#"class="body_left">25comments</a>
+                            </div>
+                            <div class="body_lb body_lb2">
+                                        <img src="img/分享.png" alt=""class="body_sp1 body_left">
+                                    <a href="#" class="body_left">138shares</a>    
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="body_list">
+                        <div class="body_imgg">
+                            <img src="img/img67.jpg" alt=""class="body_mb22">
+                        </div> 
+                        <button>25TH MAY-TRAVEL</button>
+                        <h2 class="body_cpbt">I get up in the morning looking for adventure.</h1>
+                        <p class="body_cpnr">
+                            Lorem ipsum dolor Hic excepturi nihil duci necessitatibus ratione, consequatur nostrum alias!
+                        </p>
+                        <a href=""class="body_arm">READ MORE</a>
+                        <div class="body_lbf">
+                            <div class="body_lb body_lb1">
+                                <img src="img/liaotian.png" alt=""class="body_sp body_left">
+                                <a href="#"class="body_left">25comments</a>
+                            </div>
+                            <div class="body_lb body_lb2">
+                                        <img src="img/分享.png" alt=""class="body_sp1 body_left">
+                                    <a href="#" class="body_left">138shares</a>    
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="clear"></div>
+                    <div class="body_fy">
+                        <a href="" class="body_fya">PREV POST.</a>
+                        <a href="" class="body_fya">1</a>
+                        <a href="" class="body_fya body_fyache">2</a>
+                        <a href="" class="body_fya">3</a>
+                        <a href="" class="body_fya">NEXT POST.</a>
+                    </div>
+                </div> 
+                <div class="clear"></div>
+                <div class="body_r">   
+                    <div id="body_ms">
+                        <div id="body_pp">
+                            <div id="body_ppimg">
+                                <img src="img/img11.jpg" alt="">
+                            </div>
+                            <a href="#" id="body_qm">
+                                <img src="img/text-jhon-aston.png" alt="">
+                            </a>
+                            <p id="body_js">Hi, I am John Aston. Duis autem vel eum dolor in hendrerit in vulputate velit esse mole consequat, vel illum dolore eu feugiat nulla lisis at vero eros et accumsan et iusto.</p>
+                            <ul id="body_ltb">
+                                <li ><a href="#"><img src="img/weixin-copy.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/qq-copy.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/weibo-copy.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/lianshu-copy.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                         <div id="body_cx">
+                            <form action="">
+                                <input type="text" class="body_cxk"placeholder="Type to search here">
+                                <button id="body_btn"><img src="img/search.png" alt=""style="margin-left:-8px;margin-top:-3px"></button>
+                            </form>
+                         </div>   
+                         <div id="body_rdh">
+                            <button class="body_rdhb"><h3 >Recent1 Posts</h3></button>
+                            <button class="body_rdhb body_hs"><h3 class="">Recent2 Posts</h3></button> 
+                            <div id="body_rulp">
+                                <ul id="body_rul">
+                                    <li class="body_rli">
+                                        <div class="body_inline">
+                                            <img src="img/img27.jpg" alt="">
+                                        </div>
+                                        <a href="">
+                                            <h4 class="body_inline body_hf">Traveling is awesome if you can enjoy.</h4>
+                                        </a>
+                                        <span class="body_span">25TH MAY</span>
+                                    </li>
+                                    <hr class="body_hr">
+                                    
+                                    <li class="body_rli">
+                                        <div class="body_inline">
+                                            <img src="img/img28.jpg" alt="">
+                                        </div>
+                                        <a href="">
+                                            <h4 class="body_inline body_hf">I get up in the morning looking
+                                                    for an adventure.</h4>
+                                        </a>
+                                        <span class="body_span">25TH MAY</span>
+                                    </li>
+                                    <hr class="body_hr">                    
+                                    <li class="body_rli">
+                                        <div class="body_inline">
+                                            <img src="img/img29.jpg" alt="">
+                                        </div>
+                                        <a href="">
+                                            <h4 class="body_inline body_hf">Holiday is awesome when loved
+                                                    one beside me.</h4>
+                                        </a>
+                                        <span class="body_span">25TH MAY</span>
+                                    </li>
+                                </ul>
+                            </div>        
+                        </div> 
+                        <div id="body_bottom" >
+                            <a href="#">
+                                <img src="img/ad-placeholder.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="body_rcardul">
+                            <h3 id="body_rclh">Category</h3>
+                            <ul>
+                                <li class="body_rculli">
+                                    <span class="body-rclisp"> 
+                                        <a href=""class="body_colb">- Lifestyle
+                                        </a>
+                                     </span>
+                                    <span class="body-rclisp">
+                                        <a href=""class="body_colb" style="margin-left:-12px ">- Lifestyle  
+                                        </a>
+                                    </span>
+                                </li>
+                                <hr class="body_hr2">
+                                <li class="body_rculli">
+                                    <span class="body-rclisp"> 
+                                        <a href=""class="body_colb">- Movie
+                                        </a>
+                                     </span>
+                                    <span class="body-rclisp">
+                                        <a href=""class="body_colb">- Movie 
+                                        </a>
+                                    </span>
+                                </li>
+                                <hr class="body_hr2">
+                                <li class="body_rculli">
+                                    <span class="body-rclisp"> 
+                                        <a href=""class="body_colb">- Travel
+                                        </a>
+                                     </span>
+                                    <span>
+                                        <a href=""class="body_colb">- Travel 
+                                        </a>
+                                    </span>
+                                </li>
+                                <hr class="body_hr2">
+                                <li class="body_rculli">
+                                    <span class="body-rclisp"> 
+                                        <a href=""class="body_colb">- Sports
+                                        </a>
+                                     </span>
+                                    <span>
+                                        <a href=""class="body_colb">- Sports
+                                        </a>
+                                    </span>
+                                </li>
+                                <hr class="body_hr2">
+                                <li class="body_rculli">
+                                    <span class="body-rclisp"> 
+                                        <a href=""class="body_colb">- Music 
+                                        </a>
+                                     </span>
+                                    <span>
+                                        <a href=""class="body_colb">- Music 
+                                        </a>
+                                    </span>
+                                </li>
+                                
+                            </ul>            
+                        </div>
+                    </div>
+                </div> 
+                <div class="clear "></div>
+            </div>  
+        </div>
+        <!--  -->
+        <div id="foot">
+            <div id="foot_imgs">
+                <div id="foot_asd">
+              <a href="" class="foot_box"style="margin-left:0px"><img src="img/img35.jpg" alt=""class="foot_boxi"></a>
+              <a href="" class="foot_box"><img src="img/img32.jpg" alt=""class="foot_boxi"></a>
+              <a href="" class="foot_box"><img src="img/img33.jpg" alt=""class="foot_boxi"></a>
+              <a href="" class="foot_box"><img src="img/img36.jpg" alt=""class="foot_boxi"></a>
+              <a href="" class="foot_box"><img src="img/img34.jpg" alt=""class="foot_boxi"></a>
+              <a href="" class="foot_box"><img src="img/img30.jpg" alt=""class="foot_boxi"></a>
+              <a href="" class="foot_box"><img src="img/img31.jpg" alt=""class="foot_boxi"></a>
+            </div>
+            </div>
+            <div class="clear"></div>
+            <div id="sign_1">
+                <table></table>
+                <div id="foot_ul">
+                    <table></table>
+                    <div class="foot_bs">
+                        <a href="" ><img src="img/logo2.png" alt=""class="logosize"></a>
+                        <p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud.</p>
+                    </div>
+                    <div class="foot_bs">
+                        <h3>Important Links</h3>
+                        <ul id="ulblock">
+                            <li>About us</li>
+                            <li>Terms & Conditions</li>
+                            <li>Privacy Policy</li>
+                            <li>Sitemap</li>
+                            <li>Support</li>
+                        </ul>
+                    </div>
+                    <div class="foot_bs">
+                        <h3>Popular Links</h3>
+                        <ul id="ulblock">
+                            <li>About us</li>
+                            <li>Terms & Conditions</li>
+                            <li>Privacy Policy</li>
+                            <li>Sitemap</li>
+                            <li>Support</li>
+                        </ul>
+                    </div>
+                    <div class="foot_bs">
+                        <h3>Subscribe to Newsletter</h3>
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie.
+
+                        </p>
+                        <input type="text" class="body_cxk foot_cxk2" placeholder="Type to search here">
+                        <button class="foot_btn"><img src="img/feiji.png" alt=""class="foot_btn1"></button>
+                    </div>
+                </div>
+            </div>
+            <div id="sign_2">
+                <p id="foot_p">cz到此一游</p>
+                <ul class="ul2 "id="foot_top">
+                    <li style=""><a href="#"><img src="img/weixin-copy.png" alt=""></a></li>
+                    <li ><a href="#"><img src="img/qq-copy.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/weibo-copy.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/lianshu-copy.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
